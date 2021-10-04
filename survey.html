@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="survey-style.css">
+</head>
+<body>
+    <h2>Форма обратной связи</h2>
+    <div id="form">
+        <h3>Пожалуйста, поделитесь своим опытом использования нашего сервиса</h3>
+        <i>*можете не указывать свое имя и оставить отзыв анонимно</i>
+        
+        <table>
+            <tr><td id="col1"><label for="name">Ваше имя</label></td><td id="col2"><input id="name" name="name" placeholder="Иван" type="text"></td></tr>
+            
+            <tr><td id="col1"><label for="tel">Телефон</label></td><td id="col2"><input id="tel" name="tel" placeholder="+7 999 999 99 99" type="text"></td></tr>
+    
+            <tr><td id="col1"><label for="gender">Пол</label></td><td id="col2">
+            <select name="gender" id="gender">
+                <option value="male">Ж</option>
+                <option value="female">М</option>
+            </select></td></tr>
+
+            <tr><td id="col1"><label for="years">Возраст<em>*</em></label></td><td id="col2"><input type="number" min="1" max="70" step="1" name="years" id="years" required><br></td></tr>
+    
+            <tr><td id="col1"><label for="period">Когда вы в последний раз пользовались нашим сервисом?<em>*</em></label></td>
+            
+                <td id="col2"><select name="period" id="period" required>
+                <option value="less1week">В течение текущей недели</option>
+                <option value="2weeks">2-3 недели назад</option>
+                <option value="1-2month">1-2 месяца назад</option>
+                <option value="earlier">Больше 2 месяцев назад</option>
+            </select></td></tr>
+            
+            <tr><td id="col1"><label for="quality">Оцените наш сервис от 0 до 5 (0 - ужасно, 5 - отлично)<em>*</em></label></td>
+                <td id="col2">
+                <input type="radio" value="0" name="quality">0
+                <input type="radio" value="1" name="quality">1
+                <input type="radio" value="2" name="quality">2
+                <input type="radio" value="3" name="quality">3
+                <input type="radio" value="4" name="quality">4
+                <input type="radio" value="5" name="quality" checked>5
+            </td></tr>
+            <tr><td id="col1"><label for="liked">Что вам понравилось?<em>*</em></label></td>
+                <td id="col2">
+                <input type="checkbox" value="deliverySpeed" name="liked" checked>Скорость доставки
+                <br>
+                <input type="checkbox" value="deliveryQuality" name="liked">Качество доставки
+                <br>
+                <input type="checkbox" value="productQuality" name="liked">Качество продукта
+                <br>
+                <input type="checkbox" value="productAppearence" name="liked">Внешний вид продукта
+                <br>
+                <input type="checkbox" value="orderAcceptance" name="liked">Удобство оформления заказа
+                <br>
+                <input type="checkbox" value="paymentConv" name="liked">Удобство оплаты
+            </td></tr>
+
+            <tr><td id="col1">Ваши комментарии и пожелания</td><td id="col2">
+                <textarea name="comments" id="comments" cols="30" rows="5" ></textarea>
+            </td></tr>
+        <tr><td></td><td id="col2"><input type="submit" value="Отправить" id="submit"></td></tr>
+    
+    </table>
+    </div>
+</body>
+</html>

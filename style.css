@@ -1,0 +1,27 @@
+p#green {
+  color: rgb(41, 133, 76);  
+}
+
+p#color1 {
+   color: hotpink; 
+}
+
+p#font1 {
+font-family: "Roboto", sans-serif; 
+}
+
+p#font2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+p#font3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p#font4 {
+  font-family: 'Lobster', cursive;
+}
+
+p#font5 {
+  font-family: 'Merriweather', serif;
+}
