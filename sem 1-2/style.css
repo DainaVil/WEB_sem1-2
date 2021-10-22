@@ -25,3 +25,22 @@ p#font4 {
 p#font5 {
   font-family: 'Merriweather', serif;
 }
+
+hr {
+  color: black;
+  width: 100%;
+  size: 1px;
+}
+
+img {
+  width: 300px;
+
+}
+
+img#with-border {
+  width: 200px;
+  height: 200px;
+  border-color: #000;
+  border-width: 2px;
+  border-style: outset;
+}

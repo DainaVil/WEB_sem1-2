@@ -2,7 +2,7 @@ body {
     text-align: center;
     align-items: center;
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 div#form {
@@ -44,7 +44,7 @@ td#col2 {
 
 input, select, textarea {
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 3pt;
     border-width: 1px;
     padding: 2px;
