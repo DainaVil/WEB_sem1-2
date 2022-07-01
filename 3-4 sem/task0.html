@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+  <title>Форма опроса</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Форма</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Главная<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div id="carousel1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/img1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/img2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/img3.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/img4.jpg" alt="Fourth slide">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-auto">
+        <h2>Форма обратной связи</h2><br>
+        <p><i>*можно оставить отзыв анонимно - просто не указывайте контактные данные</i></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="form">
+    <div class="row">
+      <div class="col-6 align-right"><label for="name">Ваше имя</label></div>
+      <div class="col-6 align-left"><input id="name" name="name" placeholder="Иван" type="text"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right"><label for="tel">Телефон</label></div>
+      <div class="col-6 align-left"><input id="tel" name="tel" placeholder="+7 999 999 99 99" type="text"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right"><label for="gender">Пол</label></div>
+      <div class="col-6 align-left">
+        <select name="gender" id="gender">
+          <option value="male">Ж</option>
+          <option value="female">М</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right"><label for="years">Возраст<em>*</em></label></div>
+      <div class="col-6 align-left"><input type="number" min="1" max="70" step="1" name="years" id="years" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right"><label for="period">Когда вы в последний раз пользовались нашим
+          сервисом?<em>*</em></label></div>
+      <div class="col-6 align-left">
+        <select name="period" id="period" required>
+          <option value="less1week">В течение текущей недели</option>
+          <option value="2weeks">2-3 недели назад</option>
+          <option value="1-2month">1-2 месяца назад</option>
+          <option value="earlier">Больше 2 месяцев назад</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right"><label for="quality">Оцените наш сервис от 0 до 5 (0 - ужасно, 5 -
+          отлично)<em>*</em></label></div>
+      <div class="col-6 flex">
+        <input type="radio" value="0" name="quality"> 0 <br>
+        <input type="radio" value="1" name="quality"> 1 <br>
+        <input type="radio" value="2" name="quality"> 2 <br>
+        <input type="radio" value="3" name="quality"> 3 <br>
+        <input type="radio" value="4" name="quality"> 4 <br>
+        <input type="radio" value="5" name="quality" checked> 5
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right"><label for="liked">Что вам понравилось?<em>*</em></label></div>
+      <div class="col-md-6 inline">
+        <input type="checkbox" value="deliverySpeed" name="liked" checked>Скорость доставки
+        <input type="checkbox" value="deliveryQuality" name="liked">Качество доставки
+        <input type="checkbox" value="productQuality" name="liked">Качество продукта
+        <input type="checkbox" value="productAppearence" name="liked">Внешний вид продукта
+        <input type="checkbox" value="orderAcceptance" name="liked">Удобство оформления заказа
+        <input type="checkbox" value="paymentConv" name="liked">Удобство оплаты
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 align-right">Ваши комментарии и пожелания</div>
+      <div class="col-md-6"><textarea name="comments" id="comments" cols="30" rows="5"></textarea></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <input type="submit" value="Отправить" id="submit">
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

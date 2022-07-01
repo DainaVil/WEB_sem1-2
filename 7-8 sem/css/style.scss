@@ -1,0 +1,10 @@
+@mixin rounded_square($size, $color) {
+    width: $size;
+    height: $size;
+    border-radius: 5px;
+    background-color: $color;
+}
+
+.ivory-sqare {
+    @include rounded_square(50px, 'ivory')
+}

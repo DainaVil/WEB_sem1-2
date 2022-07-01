@@ -1,0 +1,99 @@
+body{
+    margin-top:30px;
+    background: white;
+    font-family: 'Nunito',sans-serif;
+}
+
+.page-todo .tasks {
+    background: #fff;
+    padding: 0;
+}
+
+.page-todo .task-list {
+    padding: 30px 15px;
+    height: 100%
+}
+
+.page-todo .priority.high {
+    background: #f7c7c7;
+}
+
+.page-todo .priority.high span {
+    background: #e76b6b;
+    padding: 4px 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px
+}
+
+.page-todo .priority.medium {
+    background: #fff3bb;
+}
+
+.page-todo .priority.medium span {
+    background: #f7d43b;
+    padding: 4px 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px
+}
+
+.page-todo .priority.low {
+    background: #c6ffc1;
+}
+
+.page-todo .priority.low span {
+    background: #6dbe4c;
+    padding: 4px 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px
+}
+
+.page-todo .task {
+    border-bottom: 1px solid #bbbbbb;
+    position: relative
+}
+
+.page-todo .task .desc {
+    display: inline-block;
+    width: 75%;
+    padding: 10px 10px;
+    font-size: 12px
+}
+
+.page-todo .task .desc .title {
+    font-size: 18px;
+    margin-bottom: 5px
+}
+
+.page-todo .task .time {
+    display: inline-block;
+    width: 15%;
+    padding: 10px 10px 10px 0;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.page-todo .task .time .date {
+    font-size: 14px;
+}
+
+.page-todo .task.last {
+    border-bottom: 1px solid transparent
+}
+
+.page-todo .task.high {
+    border-left: 2px solid #e76b6b
+}
+
+.page-todo .task.medium {
+    border-left: 2px solid #f7d43b
+}
+
+.page-todo .task.low {
+    border-left: 2px solid #6dbe4c
+}
